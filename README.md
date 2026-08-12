@@ -1,27 +1,86 @@
-# Titanic Survival Prediction 🚢
+# Titanic Survival Prediction
 
-A Machine Learning project for predicting passenger survival using the Titanic dataset.
+A Machine Learning project that predicts whether a passenger survived the Titanic disaster.
 
-## 📌 Project Overview
+---
 
-This project focuses on exploring, preprocessing, and modeling the Titanic dataset to predict whether a passenger survived.
+## Project Overview
 
-The project includes:
+This project follows a complete Machine Learning workflow:
 
+- Data Loading
 - Exploratory Data Analysis (EDA)
-- Data Cleaning
-- Handling Missing Values
-- Outlier Detection and Handling
-- Categorical Encoding
+- Data Preprocessing
 - Feature Engineering
-- Feature Scaling
-- Machine Learning Model Training
-- Hyperparameter Tuning
+- Model Training
+- Hyperparameter Tuning using GridSearchCV
 - Model Comparison
 
 ---
 
-## 📂 Project Structure
+## Dataset
+
+The project uses the Titanic dataset.
+
+Target variable:
+
+- Survived
+    - 0 = Did not survive
+    - 1 = Survived
+
+Features include:
+
+- Pclass
+- Sex
+- Age
+- SibSp
+- Parch
+- Fare
+- Embarked
+
+---
+
+## Exploratory Data Analysis
+
+### Missing Values
+
+![Missing Values](results/figures/missing_values.png)
+
+### Age Distribution
+
+![Age Distribution](results/figures/age_distribution.png)
+
+### Correlation Heatmap
+
+![Correlation Heatmap](results/figures/correlation_heatmap.png)
+
+### Survival Analysis
+
+![Survival Analysis](results/figures/survival_analysis.png)
+
+---
+
+## Machine Learning Models
+
+The following models were trained:
+
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Support Vector Classifier (SVC)
+- K-Nearest Neighbors (KNN)
+
+Hyperparameter tuning was performed using GridSearchCV.
+
+---
+
+## Model Comparison
+
+![Model Comparison](results/figures/model_comparison.png)
+
+---
+
+## Project Structure
 
 ```text
 Titanic-Survival-Prediction/
@@ -39,7 +98,66 @@ Titanic-Survival-Prediction/
 │
 ├── results/
 │   └── figures/
+│       ├── missing_values.png
+│       ├── age_distribution.png
+│       ├── correlation_heatmap.png
+│       ├── survival_analysis.png
+│       └── model_comparison.png
 │
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
+
+---
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/mariamsayed14/Titanic-Survival-Prediction.git
+```
+
+```bash
+cd Titanic-Survival-Prediction
+```
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Usage
+
+Open Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Then open:
+
+```text
+notebooks/Titanic_Analysis.ipynb
+```
+
+---
+
+## Author
+
+**Mariam Sayed**
+
+Computer Science Student  
+AI & Data Science Track
